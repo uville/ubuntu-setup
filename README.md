@@ -1,3 +1,4 @@
 # ubuntu-setup
 ## Instructions
-- Set up [SSH key to Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- Open terminal
+- Run `sh -c "$(wget https://raw.githubusercontent.com/uville/ubuntu-setup/main/setup.sh -O -)"`
