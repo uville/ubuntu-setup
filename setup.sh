@@ -8,3 +8,4 @@ sudo snap install spotify
 sudo apt install zsh
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 sudo apt install python3.12-venv
+sudo snap install steam
