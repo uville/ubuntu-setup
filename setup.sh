@@ -9,3 +9,6 @@ sudo apt install zsh
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 sudo apt install python3.12-venv
 sudo snap install steam
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install libnvidia-gl-535:i386
