@@ -4,7 +4,7 @@ sudo apt-get upgrade -y
 echo "Update succeeded"
 sudo apt install git -y
 echo "Git installation succeeded"
-sudo apt install code
+sudo snap install code
 echo "VSCode installation succeeded"
 sudo snap install bitwarden
 echo "Bitwarden installation succeeded"
