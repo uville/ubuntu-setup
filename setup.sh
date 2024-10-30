@@ -23,7 +23,7 @@ else
     echo "${RED}Git installation failed${ENDCOLOR}"
 fi
 
-if sudo snap install --classic code ; then
+if sudo snap install code --classic ; then
     echo "${GREEN}VSCode installation done${ENDCOLOR}"
 else
     echo "${RED}VSCode installation failed${ENDCOLOR}"
