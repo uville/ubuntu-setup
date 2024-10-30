@@ -86,6 +86,12 @@ else
     echo "${RED}Zsh installation failed${ENDCOLOR}"
 fi
 
+if echo "alias python=/usr/bin/python3" >> ~/.zshrc ; then
+    echo "${GREEN}Python alias added to ~/.zshrc${ENDCOLOR}"
+else
+    echo "${RED}Adding Python alias failed${ENDCOLOR}"
+fi
+
 if sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" ; then
     echo "${GREEN}OhMyZsh installation done${ENDCOLOR}"
 else
