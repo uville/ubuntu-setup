@@ -2,8 +2,9 @@
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt install git -y
-sudo snap install code -y
+sudo apt install code -y
 sudo snap install bitwarden -y
+sudo apt install firefox -y
 sudo apt install zsh -y
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 sudo apt install python3 python3-pip -y
