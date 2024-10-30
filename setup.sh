@@ -6,6 +6,9 @@ sudo apt install code -y
 sudo snap install bitwarden -y
 sudo apt install firefox -y
 sudo apt install chromium-browser -y
+sudo snap install discord -y
+sudo snap install azuredatastudio -y
+sudo snap install storage-explorer -y
 sudo apt install zsh -y
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 sudo apt install python3 python3-pip -y
