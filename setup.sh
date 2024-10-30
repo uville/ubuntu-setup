@@ -1,87 +1,92 @@
 #!/bin/bash
+
+RED="\e[31m"
+GREEN="\e[32m"
+ENDCOLOR="\e[0m"
+
 if sudo apt-get update -y ; then
-    echo "apt-get update done"
+    echo "${GREEN}apt-get update done${ENDCOLOR}"
 else
-    echo "apt-get update failed"
+    echo "${RED}apt-get update failed${ENDCOLOR}"
 fi
 
 if sudo apt-get upgrade -y ; then
-    echo "apt-get update done"
+    echo "${GREEN}apt-get update done${ENDCOLOR}"
 else
-    echo "apt-get update failed"
+    echo "${RED}apt-get update failed${ENDCOLOR}"
 fi
 
 
 if sudo apt install git -y ; then
-    echo "Git installation done"
+    echo "${GREEN}Git installation done${ENDCOLOR}"
 else
-    echo "Git installation failed"
+    echo "${RED}Git installation failed${ENDCOLOR}"
 fi
 
 if sudo snap install code ; then
-    echo "VSCode installation done"
+    echo "${GREEN}VSCode installation done${ENDCOLOR}"
 else
-    echo "VSCode installation failed"
+    echo "${RED}VSCode installation failed${ENDCOLOR}"
 fi
 
 if sudo snap install bitwarden ; then
-    echo "Bitwarden installation done"
+    echo "${GREEN}Bitwarden installation done${ENDCOLOR}"
 else
-    echo "Bitwarden installation failed"
+    echo "${RED}Bitwarden installation failed${ENDCOLOR}"
 fi
 
 if sudo apt install firefox -y ; then
-    echo "Firefox installation done"
+    echo "${GREEN}Firefox installation done${ENDCOLOR}"
 else
-    echo "Firefox installation failed"
+    echo "${RED}Firefox installation failed${ENDCOLOR}"
 fi
 
 if sudo apt install chromium-browser -y ; then
-    echo "Chromium installation done"
+    echo "${GREEN}Chromium installation done${ENDCOLOR}"
 else
-    echo "Chromium installation failed"
+    echo "${RED}Chromium installation failed${ENDCOLOR}"
 fi
 
 
 if sudo snap install discord ; then
-    echo "Discord installation done"
+    echo "${GREEN}Discord installation done${ENDCOLOR}"
 else
-    echo "Discord installation failed"
+    echo "${RED}Discord installation failed${ENDCOLOR}"
 fi
 
 if sudo snap install azuredatastudio ; then
-    echo "Azure Data Studio installation done"
+    echo "${GREEN}Azure Data Studio installation done${ENDCOLOR}"
 else
-    echo "Azure Data Studio installation failed"
+    echo "${RED}Azure Data Studio installation failed${ENDCOLOR}"
 fi
 
 if sudo snap install storage-explorer ; then
-    echo "Azure Storage Explorer installation done"
+    echo "${GREEN}Azure Storage Explorer installation done${ENDCOLOR}"
 else
-    echo "Azure Storage Explorer installation failed"
+    echo "${RED}Azure Storage Explorer installation failed${ENDCOLOR}"
 fi
 
 if sudo apt install python3 python3-pip -y ; then
-    echo "Python3 & pip installation done"
+    echo "${GREEN}Python3 & pip installation done${ENDCOLOR}"
 else
-    echo "Python3 & pip installation failed"
+    echo "${RED}Python3 & pip installation failed${ENDCOLOR}"
 fi
 
 if sudo apt install python3-venv -y ; then
-    echo "Python3-venv installation done"
+    echo "${GREEN}Python3-venv installation done${ENDCOLOR}"
 else
-    echo "Python3-venv installation failed"
+    echo "${RED}Python3-venv installation failed${ENDCOLOR}"
 fi
 
 if sudo apt install zsh -y ; then
-    echo "Zsh installation done"
+    echo "${GREEN}Zsh installation done${ENDCOLOR}"
 else
-    echo "Zsh installation failed"
+    echo "${RED}Zsh installation failed${ENDCOLOR}"
 fi
 
 if sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" ; then
-    echo "OhMyZsh installation done"
+    echo "${GREEN}OhMyZsh installation done${ENDCOLOR}"
 else
-    echo "OhMyZsh installation failed"
+    echo "${RED}OhMyZsh installation failed${ENDCOLOR}"
 fi
 
