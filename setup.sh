@@ -80,6 +80,8 @@ fi
 
 if sudo apt install zsh -y ; then
     echo "${GREEN}Zsh installation done${ENDCOLOR}"
+    echo "alias python=/usr/bin/python3" >> ~/.zshrc
+    echo "${GREEN}Python alias added to ~/.zshrc${ENDCOLOR}"
 else
     echo "${RED}Zsh installation failed${ENDCOLOR}"
 fi
