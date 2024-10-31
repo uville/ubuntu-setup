@@ -101,7 +101,6 @@ else
     echo "${RED}Adding Python alias failed${ENDCOLOR}"
 fi
 
-
 if gsettings set org.gnome.desktop.interface color-scheme prefer-dark; then
     echo "${GREEN}Change Ubuntu theme to dark done${ENDCOLOR}"
 else
