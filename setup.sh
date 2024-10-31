@@ -107,5 +107,8 @@ else
     echo "${RED}Change Ubuntu theme to dark failed${ENDCOLOR}"
 fi
 
-
-
+if timedatectl set-local-rtc 1; then
+    echo "${GREEN}Windows dualboot related time issue fix done${ENDCOLOR}"
+else
+    echo "${RED}Windows dualboot related time issue fix failed${ENDCOLOR}"
+fi
