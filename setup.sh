@@ -95,11 +95,18 @@ else
   fi
 fi
 
-
-
 if echo "alias python=/usr/bin/python3" >> ~/.zshrc ; then
     echo "${GREEN}Python alias added to ~/.zshrc${ENDCOLOR}"
 else
     echo "${RED}Adding Python alias failed${ENDCOLOR}"
 fi
+
+
+if gsettings set org.gnome.desktop.interface color-scheme prefer-dark; then
+    echo "${GREEN}Change Ubuntu theme to dark done${ENDCOLOR}"
+else
+    echo "${RED}Change Ubuntu theme to dark failed${ENDCOLOR}"
+fi
+
+
 
