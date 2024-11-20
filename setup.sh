@@ -66,6 +66,14 @@ else
     echo "${RED}Azure Storage Explorer installation failed${ENDCOLOR}"
 fi
 
+# https://github.com/microsoft/AzureStorageExplorer/issues/6994
+
+if sudo snap connect storage-explorer:password-manager-service :password-manager-service ; then
+    echo "${GREEN}Azure Storage Explorer init done${ENDCOLOR}"
+else
+    echo "${RED}Azure Storage Explorer init failed${ENDCOLOR}"
+fi
+
 if sudo apt install python3 python3-pip -y ; then
     echo "${GREEN}Python3 & pip installation done${ENDCOLOR}"
 else
