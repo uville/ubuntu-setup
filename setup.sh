@@ -87,11 +87,13 @@ else
     echo "${RED}Python3 & pip installation failed${ENDCOLOR}"
 fi
 
-if sudo apt install python3-venv -y ; then
-    echo "${GREEN}Python3-venv installation done${ENDCOLOR}"
+if sudo apt install libreoffice -y ; then
+    echo "${GREEN}Libreoffice installation done${ENDCOLOR}"
 else
-    echo "${RED}Python3-venv installation failed${ENDCOLOR}"
+    echo "${RED}Libreoffice installation failed${ENDCOLOR}"
 fi
+
+
 
 if sudo apt install zsh -y ; then
     echo "${GREEN}Zsh installation done${ENDCOLOR}"
