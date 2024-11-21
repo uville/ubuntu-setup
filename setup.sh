@@ -54,10 +54,17 @@ else
     echo "${RED}Discord installation failed${ENDCOLOR}"
 fi
 
-if sudo snap install azuredatastudio ; then
-    echo "${GREEN}Azure Data Studio installation done${ENDCOLOR}"
+if wget https://azuredatastudio-update.azurewebsites.net/latest/linux-deb-x64/stable -O azuredatastudio.deb ; then
+    echo "${GREEN}Azure Data Studio downloading done${ENDCOLOR}"
+    if sudo dpkg -i azuredatastudio.deb ; then
+        echo "${GREEN}Azure Data Studio installing done${ENDCOLOR}"
+        rm azuredatastudio.deb
+        echo "${GREEN}Clean up done${ENDCOLOR}"
+    else
+        echo "${RED}Azure Data Studio installing failed${ENDCOLOR}"
+    fi
 else
-    echo "${RED}Azure Data Studio installation failed${ENDCOLOR}"
+    echo "${RED}Azure Data Studio downloading failed${ENDCOLOR}"
 fi
 
 if sudo snap install storage-explorer ; then
